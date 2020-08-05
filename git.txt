@@ -1,0 +1,41 @@
+git için 
+git init --> dizin kontrol
+git add . --> dizinde olan değişikleri ekler
+git commit -m "ilk deneme" --> commit ederek gönderiyoruz
+git log --> ile gitin ne durumda olduğunu görebiliyoruz.
+
+git status --> dizin içerisinde ekleme yapılması gereken veya eklenmiş ancak
+               commit edilmemiş dosyaları gösterir. commit edildikten sonra
+               herhangi bir dosya olmadığını gösterir.
+
+
+ dosyalar add ile geçiş bölgesine aktarılır
+status ile görülebilir. sonra commit edilir.
+
+git diff --> degisiklik yapıldığında onceki ve sonraki dosyalarda gorulebilir
+             git add ile geçiş (staged area ) bolmesine gönderilince göremeyiz
+git diff --staged --> ile geçiş bölgesine gönderilen dosyalar arasındaki 
+                      farklılıkları görebiliriz.
+
+git rm dosyadi --> istere add ile ister rm ile dosyaları sileriz
+git rm -r  silinecekler/ --> bir dizin içini silmek için kullanırılır -r parametresi
+                             recersive öz yinelemli gibi 
+
+git mv ilk.txt son.txt  --> dosyaların yerini veya ismini denemek için kullanılır.
+
+git checkout -- file --> ile çalışma alanında ise geri almak için kullanabiliriz.
+
+git reset HEAD index --> geçiş bölgesinden çalışma alanına geri alınmaktadır.
+
+git checkout hashcodu -- . --> istenilen hascodu ile alınan versiyona geri donmek için
+                               kullanılır. "." öenmli bulunduğumuz dizide bu işi yapıyoruz.
+
+
+gitHub içic
+git remote add githubRepo https://github.com/cemoz/iibf.git 
+git remote
+git push -u githubRepo master   --> uzak repoya dosya gönderiyoruz. -u bütün dosyalar
+                                    ve master branch da işlemyapacağımız manasında 
+
+git pull githubRepo master  --> ile dosyaları sisteme çekeriz
+
