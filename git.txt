@@ -39,3 +39,14 @@ git push -u githubRepo master   --> uzak repoya dosya gönderiyoruz. -u bütün 
 
 git pull githubRepo master  --> ile dosyaları sisteme çekeriz
 
+.gitignore  --> ile git sunucusuna göndermek istemediğimiz alanları giriyoruz.
+cat >> .gitignore --> ile dosyayı oluşturabiliriz. Burada önemli olan add veya  commit etmeden göndermek 
+                    istemediğimiz dosyaları buraya yazmak.
+ÖRNEK:
+db.sqlite3 --> bu dosyayı göndermeyecek git status ile bakıldığında görünmeyecektir.
+klasoradı/*  --> Bir klasör altındaki bütün dosyaları göndermez.
+!klasoradı/bunugonder.txt  --> ama klasör içinde göndermek istediğimiz dosya olursa başına ünlem(!) koyarak
+                                göndrebiliriz.
+                                
+
+
